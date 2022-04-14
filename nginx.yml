@@ -6,7 +6,7 @@ spec:
   selector:
     matchLabels:
       app: nginx
-  replicas: 2 # indica al controlador que ejecute 2 pods
+  replicas: 4 # indica al controlador que ejecute 2 pods
   template:
     metadata:
       labels:
@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: nginx
-        image: nginx:1.7.9
+        image: nginx:1.21.6
         ports:
         - containerPort: 80
 
